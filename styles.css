@@ -1,0 +1,589 @@
+/* Estilos del header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
+    padding: 10px; /* Ajusta el espaciado del header */
+    width: 100%;
+    border: #1b5e20;
+    border-radius: 50%;
+}
+
+/* Estilos para el título */
+.header-title {
+    margin-right: 10px;
+    font-size: 36px; /* Tamaño de fuente para pantallas grandes */
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    flex: 1 1 100%; /* El título ocupa toda la línea en pantallas pequeñas */
+}
+
+/* Estilos para la imagen */
+.header-image {
+    max-width: 200px; /* Ajusta la imagen al 100% del ancho disponible, con un tamaño máximo de 200px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    flex: 1 1 100%; /* La imagen ocupa toda la línea en pantallas pequeñas */
+}
+
+/* Ajustes para pantallas de tamaño mediano */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 32px; /* Ajuste de tamaño de fuente para pantallas medianas */
+    }
+
+    .header-image {
+        max-width: 150px; /* Limita el tamaño de la imagen en pantallas medianas */
+    }
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 28px; /* Ajuste aún más pequeño en pantallas móviles */
+    }
+
+    .header-image {
+        max-width: 120px; /* Limita el tamaño de la imagen en pantallas pequeñas */
+    }
+}
+
+/* ==============================
+   🔹 FORMULARIO DE AUTENTICACIÓN
+   ============================== */
+   #auth-form {
+    background: #a5d6a7; /* Verde claro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90%; /* Ajusta el ancho al 90% del contenedor */
+    max-width: 350px; /* Limita el ancho máximo */
+    margin: 20px auto;
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño total */
+}
+
+@media (max-width: 480px) {
+    #auth-form {
+        width: 95%; /* Ajuste para pantallas muy pequeñas */
+        padding: 15px; /* Reduce el padding en pantallas más pequeñas */
+    }
+}
+
+/* ==============================
+   🔹 CENTRAR INPUTS CORRECTAMENTE
+   ============================== */
+   #formulario-datos {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
+    width: 100%;
+    max-width: 400px; /* Asegura que el formulario no sea demasiado ancho */
+    padding: 20px;
+    background-color: #a5d6a7; /* Puedes cambiar este color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+}
+#formulario-datos {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra los elementos en la pantalla */
+    gap: 10px; /* Espaciado entre elementos */
+    padding: 20px;
+    width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+    max-width: 400px; /* Evita que se expanda demasiado */
+    margin: 0 auto; /* Centra horizontalmente */
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Ajustar los inputs */
+#formulario-datos label {
+    font-weight: bold;
+}
+
+#formulario-datos input {
+    width: 100%; /* Se adapta al ancho del contenedor */
+    padding: 8px;
+    border: 1px solid #205e25;
+    border-radius: 5px;
+}
+
+/* Botón con mejor diseño */
+#formulario-datos button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%; /* Para que se adapte bien */
+}
+
+#formulario-datos button:hover {
+    background-color: #45a049;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 480px) {
+    #formulario-datos {
+        width: 100%; /* Usa todo el ancho disponible */
+        padding: 15px;
+    }
+}
+
+
+/* ==============================
+   🔹 CENTRAR BOTONES
+   ============================== */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 90%;
+    max-width: 300px;
+    /* Mismo ancho que los inputs */
+}
+
+#login-btn {
+    background: #2e7d32;
+    color: white;
+}
+
+#login-btn:hover {
+    background: #1b5e20;
+    transform: scale(1.05);
+}
+
+#register-btn {
+    background: #3b8565;
+    color: white;
+}
+
+#register-btn:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* ==============================
+   🔹 ENLACE "OLVIDÉ MI CONTRASEÑA"
+   ============================== */
+#forgot-password-link {
+    color: #00796b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+#forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   🔹 MENSAJES DE ERROR O ÉXITO
+   ============================== */
+#mensaje-box {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    width: 90%;
+    max-width: 300px;
+}
+
+#mensaje-box.error {
+    background: #e53935;
+    color: white;
+}
+
+#mensaje-box.success {
+    background: #4caf50;
+    color: white;
+}
+
+/* ==============================
+   🔹 ESTILOS GENERALES
+   ============================== */
+   
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    /* Color de fondo más claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #004d40;
+    /* Color de texto más oscuro */
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background: #00796b;
+    /* Color verde oscuro */
+    color: white;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #00695c;
+    /* Color verde más claro */
+    border-bottom: 2px solid #004d40;
+    /* Color de borde más oscuro */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+/* ==============================
+   🔹 TABLAS
+   ============================== */
+   .table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%; /* Asegura que la tabla no se salga del contenedor */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 5px rgba(151, 32, 133, 0.1);
+    table-layout: fixed; /* Asegura que las celdas se ajusten al ancho disponible */
+}
+
+table,
+th,
+td {
+    border: 1px solid #004d40;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #00796b;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #b2dfdb;
+}
+
+/* ==============================
+   🔹 GRÁFICOS
+   ============================== */
+   .grafico-container {
+    width: 90%; /* Se adapta mejor en pantallas pequeñas */
+    max-width: 800px; /* Un poco más ancho si la pantalla lo permite */
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto; /* Evita que se desborde en pantallas pequeñas */
+}
+
+canvas {
+    width: 100% !important; /* Se ajusta automáticamente al contenedor */
+    max-width: 100%; /* Evita que sobrepase los límites */
+    height: auto !important; /* Mantiene la proporción */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .grafico-container {
+        width: 95%; /* Usa más espacio disponible */
+        padding: 15px;
+    }
+}
+
+
+/* ==============================
+   🔹 PIE DE PÁGINA
+   ============================== */
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #00796b;
+    /* Color verde oscuro */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* Contenedor de los botones */
+.dt-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espaciado entre botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center; /* Asegura alineación vertical */
+    padding: 10px;
+    width: 100%;
+}
+
+/* Ajuste de los botones */
+.dt-buttons button {
+    padding: 10px 20px;
+    color: rgb(39, 115, 86);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    white-space: nowrap; /* Evita saltos de línea */
+    min-width: 120px; /* Asegura que tengan un ancho mínimo */
+    text-align: center; /* Centra el texto */
+    flex: 0 1 auto; /* Permite que los botones se ajusten sin ocupar todo el espacio */
+}
+
+/* Efecto al pasar el mouse */
+.dt-buttons button:hover {
+    transform: scale(1.05);
+}
+
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Cambia el padding de los botones */
+    .dt-buttons button {
+        padding: 8px 15px;
+        /* Menos padding en pantallas pequeñas */
+        font-size: 0.9rem;
+        /* Reducir el tamaño de la fuente */
+        min-width: 100px;
+        /* Ajustar el ancho mínimo */
+    }
+
+    /* Hace que los botones se alineen de manera vertical */
+    .dt-buttons {
+        flex-direction: column;
+        /* Alinea los botones de arriba a abajo */
+        align-items: center;
+        /* Centra los botones */
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* En pantallas aún más pequeñas, reducimos aún más el tamaño de los botones */
+    .dt-buttons button {
+        padding: 6px 12px;
+        /* Aún menos padding */
+        font-size: 0.8rem;
+        /* Reducir aún más el tamaño de la fuente */
+        min-width: 80px;
+        /* Ajustar el ancho mínimo */
+    }
+}
+
+button[type="submit"] {
+    button[type="submit"] {
+        background-color: #00796b;
+        /* Verde */
+        color: white;
+        padding: 12px 20px;
+        /* Ajusta el padding para que sea adecuado */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        /* Ocupa el 100% del ancho disponible */
+        box-sizing: border-box;
+        /* Asegura que el padding no afecte el tamaño total */
+        margin-right: 10px;
+        margin: 20px;
+        /* Agrega un margen en la parte derecha para evitar que toque el borde */
+        transition: all 0.3s;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #004d40;
+        /* Verde más oscuro */
+        transform: scale(1.05);
+    }
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40;
+    /* Verde más oscuro */
+    transform: scale(1.05);
+}
+
+/* ==============================
+   🔹 MEDIA QUERIES PARA RESPONSIVIDAD
+   ============================== */
+
+/* Para pantallas más pequeñas (móviles) */
+@media (max-width: 600px) {
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Permite el desplazamiento horizontal */
+        margin-top: 20px;
+    }
+
+    #data-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: auto; /* Permite que las celdas se ajusten */
+    }
+
+    #data-table th,
+    #data-table td {
+        padding: 8px;
+        text-align: left;
+        word-wrap: break-word; /* Asegura que el texto largo se ajuste dentro de la celda */
+    }
+
+    #data-table th {
+        background-color: #00796b;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #data-table tr:nth-child(even) {
+        background-color: #b2dfdb;
+    }
+
+    #data-table th,
+    #data-table td {
+        border: 1px solid #004d40;
+    }
+
+    /* Hacer la tabla más responsiva en móviles */
+    @media screen and (max-width: 768px) {
+        #data-table {
+            font-size: 0.9rem; /* Reducir el tamaño de fuente en pantallas pequeñas */
+        }
+
+        #data-table th,
+        #data-table td {
+            padding: 8px; /* Reducir el padding */
+        }
+
+        /* Opcional: Agregar desplazamiento horizontal para tablas más anchas */
+        .table-container {
+            overflow-x: scroll;
+        }
+    }
+}
+/**CAMARA**/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.camera-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.video {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 400px; /* Limitar la altura para dispositivos móviles */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para mejor responsividad */
+    gap: 10px; /* Espacio entre botones */
+    margin-top: 15px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Botones ocupan el ancho completo */
+    font-size: 1em; /* Tamaño de fuente adecuado */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    word-wrap: break-word; /* Permitir que el texto largo se ajuste */
+}
+
+@media (min-width: 600px) {
+    .buttons {
+        flex-direction: row; /* Cambiar a fila en pantallas más grandes */
+    }
+
+    button {
+        width: auto; /* Botones no ocupan todo el ancho en pantallas grandes */
+        flex: 1; /* Hacer que los botones ocupen espacio equitativo */
+    }
+}

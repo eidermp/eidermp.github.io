@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriWeb - Inicio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./auth.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a AgriWeb</h1>
+    </header>
+    <main>
+        <form id="auth-form">
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="button" id="login-btn">Iniciar sesión</button>
+            <br>
+            <button type="button" id="register-btn">Registrar</button>
+            <p><a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a></p>
+            <div id="mensaje-box" style="display:none;"></div>
+        </form>
+               
+    </main>
+
+</body>
+</html>
